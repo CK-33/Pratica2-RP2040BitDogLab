@@ -64,6 +64,17 @@ O firmware foi escrito em C utilizando o Pico SDK. As etapas de desenvolvimento 
 
 ---
 
+## Estrutura do Repositório
+
+| Arquivo | Descrição |
+|---|---|
+| `P2RP2040.c` | Código-fonte principal do firmware. Contém a configuração dos pinos, as funções de controle da matriz de LEDs, as duas animações e o loop principal de monitoramento dos botões. |
+| `CMakeLists.txt` | Arquivo de configuração do CMake. Define o nome do projeto, as dependências do Pico SDK (`pico_stdlib`, `hardware_pio`, `hardware_clocks`), a geração do header PIO e os targets de compilação necessários para gerar o arquivo `.uf2`. |
+| `diagram.json` | Arquivo de configuração do simulador Wokwi. Descreve o circuito completo: a placa Raspberry Pi Pico W, a matriz WS2812 5x5 conectada ao pino GP7, e os botões A e B conectados aos pinos GP5 e GP6, com todas as conexões de alimentação e terra. |
+| `ws2812.pio.h` | Header C com as instruções do programa PIO e a função `ws2812_program_init`, responsável por inicializar a máquina de estados do RP2040 para controlar o protocolo de comunicação da matriz WS2812 a 800 kHz. |
+
+---
+
 ## Como Testar
 
 ### Pré-requisitos
