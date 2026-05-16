@@ -120,6 +120,8 @@ make
 - Cada animação é composta por **5 frames** com intervalos de 200 ms (animação vermelha) e 180 ms (animação azul) entre os frames;
 - Após a conclusão de cada animação, a matriz é apagada automaticamente.
 
+## Vídeo e Relatório em PDF completos
+https://drive.google.com/drive/folders/1G_SG7aDlIOK1163cZUgXhOzlbaH7MrEX?usp=sharing
 ---
 
 ## Conclusão
